@@ -1,20 +1,16 @@
 import React, {Component} from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
+import HomePage from "./components/home/HomePage";
 
 class App extends Component {
     render() {
         return (
-            <div className="container-fluid">
-                <p>Header here...</p>
-                {this.props.children}
+            <div>
+                <HomePage/>
             </div>
         );
-    }
+    };
 }
 
-App.propTypes = {
-    children: PropTypes.object.isRequired
-};
 
 export default App;
