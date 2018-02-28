@@ -22,6 +22,7 @@ class CoursesPage extends React.Component {
         alert(`Saving: ${this.state.course.title}`);
     }
 
+
     render() {
         return (
             <div>
@@ -40,4 +41,10 @@ class CoursesPage extends React.Component {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);
+function mapStateToProps(state, ownProps) {
+    return {
+        courses: state.courses
+    };
+}
+
+export default connect(mapStateToProps)(CoursesPage);
