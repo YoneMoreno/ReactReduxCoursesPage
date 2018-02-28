@@ -59,21 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CoursesPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/course/CoursesPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,6 +79,16 @@
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/courseActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -310,7 +310,7 @@
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
       <workItem from="1519384597114" duration="9293000" />
-      <workItem from="1519807300449" duration="4571000" />
+      <workItem from="1519807300449" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -438,11 +438,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519811237439</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add mapStateToProps to get the state from Redux store and translate it into CoursesPage's props:&#10;&#10;function mapStateToProps(state, ownProps) {&#10;    return {&#10;        courses: state.courses&#10;    };&#10;}">
+      <created>1519811941483</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519811941483</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19287000" />
+    <option name="totallyTimeSpent" value="19704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -494,7 +501,8 @@
     <MESSAGE value="Add inmutability invariant to store:&#10;&#10;import {applyMiddleware, createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore(&#10;        rootReducer,&#10;        initialState,&#10;        applyMiddleware(reduxImmutableStateInvariant())           &lt;-----------------------------------&#10;    );&#10;};" />
     <MESSAGE value="Add store in index.js which is App's entry point.&#10;&#10;Pass down to container components the store using Provider Redux's component." />
     <MESSAGE value="Add connect function to CoursesPage to use Redux storein React component:&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add connect function to CoursesPage to use Redux storein React component:&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);" />
+    <MESSAGE value="Add mapStateToProps to get the state from Redux store and translate it into CoursesPage's props:&#10;&#10;function mapStateToProps(state, ownProps) {&#10;    return {&#10;        courses: state.courses&#10;    };&#10;}" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mapStateToProps to get the state from Redux store and translate it into CoursesPage's props:&#10;&#10;function mapStateToProps(state, ownProps) {&#10;    return {&#10;        courses: state.courses&#10;    };&#10;}" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -729,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/courseActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -815,10 +815,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/courseActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/course/CoursesPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
