@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b25c59a2-f7fb-49a9-bf80-8165649171c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/courseReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/courseReducer.js" afterPath="$PROJECT_DIR$/src/reducers/courseReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -118,8 +118,8 @@
       <file leaf-file-name="courseReducer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -304,7 +304,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
-      <workItem from="1519384597114" duration="8605000" />
+      <workItem from="1519384597114" duration="9031000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -376,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519805308508</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add our first reducer: coursesReducer&#10;&#10;&#10;We should not mutate the state:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            state.push(action.course); &lt;-----------------------------------------------------&#10;            return state;&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}">
+      <created>1519806138092</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519806138092</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14028000" />
+    <option name="totallyTimeSpent" value="14454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -423,7 +430,8 @@
     <MESSAGE value="fix coursePage's course's title shoud not be null. Also deleted classAciveName from Link because of React warning in dev browser." />
     <MESSAGE value="fix input to add course now updates when we key press. The reason it was not updating was because of:&#10;&#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.title;            &lt;------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10;    Should be:&#10;    &#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.value;      &lt;-------------------------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10; So we are taking the course from the state, changing its title with the written one in the input form and putting it in the state again." />
     <MESSAGE value="Add first action:&#10;&#10;export function createCourse(course) {&#10;    return {type: 'CREATE_COURSE', course};&#10;}" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add first action:&#10;&#10;export function createCourse(course) {&#10;    return {type: 'CREATE_COURSE', course};&#10;}" />
+    <MESSAGE value="add our first reducer: coursesReducer&#10;&#10;&#10;We should not mutate the state:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            state.push(action.course); &lt;-----------------------------------------------------&#10;            return state;&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}" />
+    <option name="LAST_COMMIT_MESSAGE" value="add our first reducer: coursesReducer&#10;&#10;&#10;We should not mutate the state:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            state.push(action.course); &lt;-----------------------------------------------------&#10;            return state;&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -612,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
