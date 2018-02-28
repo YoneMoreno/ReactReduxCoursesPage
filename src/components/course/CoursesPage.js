@@ -12,7 +12,16 @@ class CoursesPage extends React.Component {
     render() {
         return (
             <div>
-                <h1>Administration courses</h1>
+                <h1>Courses</h1>
+                <h2>Create a new course:</h2>
+                <input type="text"
+                       onChange={this.onTitleChange}
+                       value={this.state.course.title}
+                />
+                <input type="submit"
+                       onClick={this.onClickSave}
+                       value="Save"
+                />
             </div>
         );
     };
