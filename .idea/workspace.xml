@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b25c59a2-f7fb-49a9-bf80-8165649171c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/courseActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/courseReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -105,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseActions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="courseActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/courseActions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseReducer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -151,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/components/common/Header.js" />
         <option value="$PROJECT_DIR$/src/components/course/CoursesPage.js" />
         <option value="$PROJECT_DIR$/src/actions/courseActions.js" />
+        <option value="$PROJECT_DIR$/src/reducers/courseReducers.js" />
+        <option value="$PROJECT_DIR$/src/reducers/courseReducer.js" />
       </list>
     </option>
   </component>
@@ -239,6 +251,12 @@
               <item name="reactreduxcourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactreduxcourses" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactreduxcourses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactreduxcourses" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -286,7 +304,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
-      <workItem from="1519384597114" duration="7835000" />
+      <workItem from="1519384597114" duration="8605000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -351,11 +369,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519804590081</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add first action:&#10;&#10;export function createCourse(course) {&#10;    return {type: 'CREATE_COURSE', course};&#10;}">
+      <created>1519805308508</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519805308508</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13258000" />
+    <option name="totallyTimeSpent" value="14028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -397,7 +422,8 @@
     <MESSAGE value="add onTitleChange handler to create a course modifying its title" />
     <MESSAGE value="fix coursePage's course's title shoud not be null. Also deleted classAciveName from Link because of React warning in dev browser." />
     <MESSAGE value="fix input to add course now updates when we key press. The reason it was not updating was because of:&#10;&#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.title;            &lt;------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10;    Should be:&#10;    &#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.value;      &lt;-------------------------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10; So we are taking the course from the state, changing its title with the written one in the input form and putting it in the state again." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix input to add course now updates when we key press. The reason it was not updating was because of:&#10;&#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.title;            &lt;------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10;    Should be:&#10;    &#10;onTitleChange(event) {&#10;        const course = this.state.course;&#10;        course.title = event.target.value;      &lt;-------------------------------------&#10;        this.setState({course: course});&#10;    }&#10;    &#10; So we are taking the course from the state, changing its title with the written one in the input form and putting it in the state again." />
+    <MESSAGE value="Add first action:&#10;&#10;export function createCourse(course) {&#10;    return {type: 'CREATE_COURSE', course};&#10;}" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add first action:&#10;&#10;export function createCourse(course) {&#10;    return {type: 'CREATE_COURSE', course};&#10;}" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -579,7 +605,15 @@
     <entry file="file://$PROJECT_DIR$/src/actions/courseActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/courseReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
