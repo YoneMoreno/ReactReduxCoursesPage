@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b25c59a2-f7fb-49a9-bf80-8165649171c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/configureStore.js" afterPath="$PROJECT_DIR$/src/store/configureStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,18 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/home/HomePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/common/Header.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,11 +100,21 @@
       <file leaf-file-name="configureStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/store/configureStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/redux-immutable-state-invariant/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-868">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -313,7 +313,7 @@
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
       <workItem from="1519384597114" duration="9293000" />
-      <workItem from="1519807300449" duration="1904000" />
+      <workItem from="1519807300449" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -413,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519809106331</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix brackets">
+      <created>1519809246796</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1519809246796</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16620000" />
+    <option name="totallyTimeSpent" value="17108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -465,7 +472,8 @@
     <MESSAGE value="Add inmutability to our first reducer:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            return [...state,&#10;                Object.assign({}, action.course)   &lt;-------------------------- take the old state's contents and add a copy of the course which is a new array&#10;            ];&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}" />
     <MESSAGE value="Add rootReducer:&#10;&#10;&#10;import {combineReducers} from 'redux';&#10;import courses from './courseReducer';&#10;&#10;const rootReducer = combineReducers({&#10;    courses&#10;});&#10;&#10;export default rootReducer;" />
     <MESSAGE value="Add store:&#10;&#10;&#10;import {createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore({&#10;        rootReducer,&#10;        initialState&#10;    });&#10;};" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add store:&#10;&#10;&#10;import {createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore({&#10;        rootReducer,&#10;        initialState&#10;    });&#10;};" />
+    <MESSAGE value="fix brackets" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix brackets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -756,12 +764,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux-immutable-state-invariant/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
