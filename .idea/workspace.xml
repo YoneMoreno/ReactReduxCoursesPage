@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b25c59a2-f7fb-49a9-bf80-8165649171c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store/configureStore.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/configureStore.js" afterPath="$PROJECT_DIR$/src/store/configureStore.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,8 +110,8 @@
       <file leaf-file-name="configureStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/store/configureStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="119">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -313,7 +313,7 @@
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
       <workItem from="1519384597114" duration="9293000" />
-      <workItem from="1519807300449" duration="1757000" />
+      <workItem from="1519807300449" duration="1904000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -406,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519808260854</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add store:&#10;&#10;&#10;import {createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore({&#10;        rootReducer,&#10;        initialState&#10;    });&#10;};">
+      <created>1519809106331</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519809106331</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16473000" />
+    <option name="totallyTimeSpent" value="16620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -457,7 +464,8 @@
     <MESSAGE value="add our first reducer: coursesReducer&#10;&#10;&#10;We should not mutate the state:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            state.push(action.course); &lt;-----------------------------------------------------&#10;            return state;&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}" />
     <MESSAGE value="Add inmutability to our first reducer:&#10;&#10;export default function courseReducer(state = [], action) {&#10;    switch (action.type) {&#10;        case 'CREATE_COURSE':&#10;            return [...state,&#10;                Object.assign({}, action.course)   &lt;-------------------------- take the old state's contents and add a copy of the course which is a new array&#10;            ];&#10;            break;&#10;        default:&#10;            return state;&#10;            break;&#10;    }&#10;}" />
     <MESSAGE value="Add rootReducer:&#10;&#10;&#10;import {combineReducers} from 'redux';&#10;import courses from './courseReducer';&#10;&#10;const rootReducer = combineReducers({&#10;    courses&#10;});&#10;&#10;export default rootReducer;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add rootReducer:&#10;&#10;&#10;import {combineReducers} from 'redux';&#10;import courses from './courseReducer';&#10;&#10;const rootReducer = combineReducers({&#10;    courses&#10;});&#10;&#10;export default rootReducer;" />
+    <MESSAGE value="Add store:&#10;&#10;&#10;import {createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore({&#10;        rootReducer,&#10;        initialState&#10;    });&#10;};" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add store:&#10;&#10;&#10;import {createStore} from 'redux';&#10;import rootReducer from '../reducers/index';&#10;&#10;export default function configureStore(initialState) {&#10;    return createStore({&#10;        rootReducer,&#10;        initialState&#10;    });&#10;};" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -750,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="119">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
