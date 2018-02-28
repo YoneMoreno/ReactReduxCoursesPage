@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 class CoursesPage extends React.Component {
     constructor(props, context) {
@@ -37,6 +38,6 @@ class CoursesPage extends React.Component {
             </div>
         );
     };
-};
+}
 
-export default CoursesPage;
+export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);
