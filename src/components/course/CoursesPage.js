@@ -28,6 +28,7 @@ class CoursesPage extends React.Component {
         return (
             <div>
                 <h1>Courses</h1>
+                {this.props.courses.map(this.courseRow)}
                 <h2>Create a new course:</h2>
                 <input type="text"
                        onChange={this.onTitleChange}
@@ -40,6 +41,10 @@ class CoursesPage extends React.Component {
             </div>
         );
     };
+
+    courseRow(course, index) {
+        return <div key={index}>{course.title}</div>
+    }
 }
 
 function mapStateToProps(state, ownProps) {
