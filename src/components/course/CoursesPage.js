@@ -5,7 +5,7 @@ class CoursesPage extends React.Component {
         super(props, context);
 
         this.state = {
-            course: {title: ''},
+            course: {title: ''}
         };
         this.onTitleChange = this.onTitleChange.bind(this);
         this.onClickSave = this.onClickSave.bind(this);
@@ -13,7 +13,7 @@ class CoursesPage extends React.Component {
 
     onTitleChange(event) {
         const course = this.state.course;
-        course.title = event.target.title;
+        course.title = event.target.value;
         this.setState({course: course});
     }
 
