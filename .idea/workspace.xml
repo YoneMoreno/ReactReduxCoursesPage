@@ -98,8 +98,8 @@
       <file leaf-file-name="CoursesPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/course/CoursesPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="200">
+              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -270,7 +270,7 @@
       <option name="presentableId" value="Default" />
       <updated>1518939472513</updated>
       <workItem from="1518939475756" duration="5423000" />
-      <workItem from="1519384597114" duration="5292000" />
+      <workItem from="1519384597114" duration="5577000" />
     </task>
     <task id="LOCAL-00001" summary="create our styles">
       <created>1518943087197</created>
@@ -307,11 +307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519802381643</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add form to add courses">
+      <created>1519802727396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1519802727396</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10715000" />
+    <option name="totallyTimeSpent" value="11000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -349,7 +356,8 @@
     <MESSAGE value="add header" />
     <MESSAGE value="add courses" />
     <MESSAGE value="add constructor to coursesPage to use put courses in state" />
-    <option name="LAST_COMMIT_MESSAGE" value="add constructor to coursesPage to use put courses in state" />
+    <MESSAGE value="add form to add courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form to add courses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -522,8 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/course/CoursesPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="200">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>
